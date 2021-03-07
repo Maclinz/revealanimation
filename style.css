@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    padding: 0 10rem;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    margin: 0 3rem;
+}
+.nav-item a{
+    color: rgba(51, 51, 51, 0.738);
+    padding: .4rem 2rem;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: rgb(51, 51, 51);
+}
+
+main{
+    padding: 10rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    color: rgba(51, 51, 51, 0.841);
+    width: 50%;
+    padding: 3rem 0;
+    letter-spacing: 1px;
+}
+
+.gallery{
+    width: 100%;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 2rem;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    transition: all .4s ease-in-out;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-1{
+    grid-column: span 4;
+    grid-row: span 3;
+}
+.image-2{
+    grid-column: span 4;
+    grid-row: span 5;
+}
+.image-3{
+    grid-column: span 4;
+    grid-row: span 5;
+}
+.image-4{
+    grid-column: span 4;
+    grid-row: span 3;
+}
+
+.para{
+    font-size: 1.2rem;
+    color: rgba(51, 51, 51, 0.759);
+    width: 50%;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    padding: 2rem 0;
+}
+
+.btn{
+    font-size: 1.2rem;
+    color: rgba(51, 51, 51, 0.876);
+    border-bottom: 1px solid #333;
+}
+
+
+
+
+
+
+
+.sticky{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 10px 14px rgba(0, 0, 0 , 0.1);
+    background-color: white;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    transform: rotate(40deg) scale(0.4) translateY(-20px);
+}
+
+footer{
+    height: 20vh;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 1px;
+    
+}
